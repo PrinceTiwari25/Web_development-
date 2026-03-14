@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h1>General Knowledge Quiz</h1>
+    <p>Test your basic knowledge with this quick quiz.</p>
+
+    <div id="quiz-box">
+        <h2 id="question">Question here</h2>
+        <div id="options"></div>
+        <button id="nextBtn">Next</button>
+    </div>
+
+    <div id="result-box" class="hide">
+        <h2 id="score"></h2>
+        <p id="message"></p>
+        <button onclick="restartQuiz()">Restart Quiz</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
