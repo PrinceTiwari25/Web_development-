@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Image Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main">
+
+<h1>Image Generator</h1>
+
+<div class="search">
+<input id="prompt" placeholder="Enter prompt like cute cat">
+<button onclick="goNext()">Generate</button>
+</div>
+
+<div class="suggest">
+<span onclick="setPrompt(' cat')"> Cat</span>
+<span onclick="setPrompt('astronaut in space')">Astronaut</span>
+<span onclick="setPrompt('cyberpunk city')">Cyberpunk</span>
+<span onclick="setPrompt('lion ')">Lion</span>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
