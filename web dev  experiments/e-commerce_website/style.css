@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #eef2f3, #ffffff);
+}
+
+/* NAVBAR */
+.navbar {
+    background: #131921;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ff9900;
+}
+
+.cart-btn {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    background: url("https://images.unsplash.com/photo-1607083206968-13611e3d76db") center/cover;
+    color: white;
+    padding: 70px;
+    text-align: center;
+}
+
+/* PRODUCTS */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card button {
+    width: 100%;
+    padding: 10px;
+    background: #ff9900;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* CART */
+#cart-items {
+    list-style: none;
+    padding: 20px;
+}
+
+#cart-items li {
+    margin: 10px 0;
+}
+
+/* BUTTON */
+.checkout-btn {
+    margin: 20px;
+    padding: 10px 20px;
+    background: green;
+    color: white;
+    border: none;
+}
+
+/* CHECKOUT */
+.checkout-box {
+    max-width: 400px;
+    margin: 60px auto;
+    background: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.checkout-box input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+}
