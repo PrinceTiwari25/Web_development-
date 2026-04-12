@@ -104,6 +104,14 @@ This project demonstrates:
 * Dark/light theme toggle
 * Backend integration with APIs like OpenAI
 
+## RESULT
+
+### input
+![Input](images/input.png)
+
+### OUTPUT
+![Output](images/output.png)
+
 ---
 
 ## 👨‍💻 Author
