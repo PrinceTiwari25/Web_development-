@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Quiz Time 🧠</h2>
+
+    <form action="/result" method="POST">
+
+        {% for i in range(quiz|length) %}
+        <div class="question-box">
+            <p><b>{{ i+1 }}. {{ quiz[i].question }}</b></p>
+
+            {% for option in quiz[i].options %}
+            <label class="option">
+                <!-- UNIQUE NAME FIX -->
+                <input type="radio" name="q{{ i }}" value="{{ option }}" required>
+                {{ option }}
+            </label>
+            {% endfor %}
+        </div>
+        {% endfor %}
+
+        <button type="submit">Submit Quiz</button>
+    </form>
+</div>
+
+</body>
+</html>
